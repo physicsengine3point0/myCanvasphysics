@@ -1,16 +1,32 @@
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class ControlPanel extends Frame implements ActionListener
 {
-  private Choice gravityChoice;
+	private Choice gravityChoice;
 	
 	public ControlPanel()
 	{
-		gravityChoice=new Choice();
+		gravityChoice = new Choice();
 		gravityChoice.add("Yes");
 		gravityChoice.add("No");
+		
+		Panel myPanel = new Panel();
+		myPanel.setLayout(new FlowLayout());
+		myPanel.add(new Label("Gravity:"));
+		myPanel.add(gravityChoice);
+		add(myPanel, BorderLayout.CENTER);
+		
+		pack();
+		addWindowListener(new WindowAdapter()
+		{
+			public void windowClosing(WindowEvent e)
+			{
+				System.exit(0);
+			}
+		});
+		
+		setVisible(true);
 	}
 	
 	/**
@@ -23,9 +39,9 @@ public class ControlPanel extends Frame implements ActionListener
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-		
+	public void actionPerformed(ActionEvent arg0) 
+	{
+		// TODO Auto-generated method stub	
 	}
 	
 }
