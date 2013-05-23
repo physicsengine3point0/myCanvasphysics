@@ -9,6 +9,12 @@ public class MyCanvas extends Canvas
 	final static int uniY=500;
 	public static ControlPanel UI;
 
+    
+	/**
+	 * Constructor for MyCanvas class.  Doesn't do anything else 
+	 * 
+	 * 
+	 */
     public MyCanvas()
     {
     }
