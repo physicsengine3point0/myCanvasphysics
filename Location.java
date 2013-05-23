@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Location
 {
-  double x;
+	double x;
 	double y;
 	
 	/**
@@ -122,6 +122,7 @@ public class Location
 		{
 			if(this.getDistanceTo(particle.getLocation())<=distance) 
 			{
+				System.out.println(this.getDistanceTo(particle.getLocation()));
 				results.add(particle);
 			}
 		}
