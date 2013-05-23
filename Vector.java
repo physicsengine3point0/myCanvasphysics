@@ -1,7 +1,7 @@
 
 public class Vector
 {
-  double direction;
+	double direction;
 	double length;
 	
 	public Vector()
