@@ -1,7 +1,7 @@
 
 public class Collision
 {
-  
+	
 	//this creates an object that calculates two particles
 	//and returns them
 	public Collision()
