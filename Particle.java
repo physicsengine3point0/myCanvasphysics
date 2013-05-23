@@ -3,7 +3,7 @@ import java.util.*;
 
 
 public class Particle {
-  
+	
 	//location and Direction
 	Location myLocation;
 	Vector velocity;
