@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 
 
 public class Universe {
-  
-	public static boolean gravityOn=true;
+	
+	public static boolean gravityOn=false;
 	
 	static int xSize;
 	static int ySize;
