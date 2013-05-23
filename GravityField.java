@@ -2,7 +2,7 @@
 public class GravityField extends Field
 {
 
-  private final static double G = .001;
+	private final static double G = .001;
 	
 	public GravityField() {
 		// TODO Auto-generated constructor stub
